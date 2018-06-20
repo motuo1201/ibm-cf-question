@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>IBM Cloud Paas勉強会資料</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown>
+					<textarea data-template>
+						###  IBM Cloud Foundryを
+						###  もっと使いこなしたい！！！  
+						<div style="text-align: right;margin-top: 100px">
+							motuo : 2018-7-4
+						</div>	
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						#### 自己紹介
+					</textarea>
+					<aside class="notes">
+							Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+					</aside>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						+ 名前 : motuo(もつお)
+						+ メインのお仕事 : 物流系企業の社内SE
+						+ IBM Cloudの使い道 : 個人開発サービスのproduction環境
+						+ 良く使う言語 :
+							- PHP(Laravel5)
+							- VBA
+							- RPG(ゲームじゃないですよ！)
+					</textarea>			
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						Cloud Foundry、皆さん使いこなしていますか？  
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						現状、私はWebアプリケーションのコンテナとしか使えていません…  
+						
+						何だかすごくもったいない気が…
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						### というわけで、気になる事や機能を色々と聞きたいと思います！
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						##### 1. 「接続」って何ですか？
+
+						![接続](./images/connect.png)
+
+						接続したら何が嬉しいんですか？  
+						もっと簡単に`watson API`が使えたりしますか？
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						##### 2. 継続的デリバリーで「これ便利！」という機能は？
+
+						![接続](./images/toolchain.png)
+
+						GithubへpushされたらDelivery Pipeline使って  
+						自動的にデプロイしています。
+						これだけでも十分、便利なのですが他におススメの機能はありますか？
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						##### 3. 可用性モニターの使い方って？
+
+						![接続](./images/monitor.png)
+
+						Webページの応答時間を見るもの？  
+						皆さん、どんな使い方してますか？
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						##### 4. アプリケーションログを見る簡単に見る方法は？
+
+						![SSH](./images/ssh.png)
+
+						とりあえず、Cloud FoundryからSSH接続して  
+						ログを確認していますが、簡単に出来ませんか？
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						##### 5. Kuberentesとの連携ってどうですか？
+
+						今まではcf一本で開発をしてきましたが、  
+						やっぱり気になる`Kuberentes`  
+						Cloud Foundry on Kuberentesを使う  
+						メリットはやはり大きいですか？
+					</textarea>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
